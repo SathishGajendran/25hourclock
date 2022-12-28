@@ -1,0 +1,1 @@
+function getTime(){const t=()=>new Date,e=1e3*(60*t().getHours()*60+60*t().getMinutes()+t().getSeconds())/.96,o=Math.floor(e/36e5),n=Math.floor(e/6e4)%60,a=Math.floor(e/1e3)%60,r=`${o.toString().padStart(2,"0")}:${n.toString().padStart(2,"0")}:${a.toString().padStart(2,"0")}`;document.getElementById("display-box").innerHTML=r}setInterval(getTime,960);
